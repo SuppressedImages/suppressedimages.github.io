@@ -1,10 +1,10 @@
-title: Immaculate
+title: Suppressed Images
 description: >
-  A beautiful, fast, AMP-compliant Jekyll theme based on Tufte CSS.
-baseurl: "/immaculate"
-url: "https://github.com/siawyoung/immaculate"
+  A story about Heather Dewey-Hagborg and Chelsea Manning 
+url: "https://suppressedimages.github.io"
+baseurl: "/"
 paginate:	2 # The number of posts to show per page on your homepage
-name: "Lau Siaw Young"
+name: "Heather Dewey-Hagborg"
 markdown: kramdown
 permalink: none
 kramdown:
