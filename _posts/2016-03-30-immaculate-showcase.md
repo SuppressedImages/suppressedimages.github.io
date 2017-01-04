@@ -15,7 +15,7 @@ And please feel free to modify Immaculate's template files to your liking. Immac
 
 Here is a **bold**, an *italic*, and a [hyperlink](/#).
 
-
+This is a normal-sized image.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
