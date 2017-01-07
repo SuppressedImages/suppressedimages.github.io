@@ -100,6 +100,30 @@ h2 {
   }
 }
 
+.site-footer {
+  text-align: center;
+
+  p {
+    width: 100%;
+  }
+
+  .thanks {
+    font-style: italic;
+    margin-bottom: 0.2em;
+  }
+}
+
+.logo {
+  background: inherit !important;
+
+  img {
+    width: 160px;
+    background-color: inherit;
+    border: 0 !important;
+    margin-bottom: 2em;
+  }
+}
+
 @media only screen and (max-width : 1299px) {
   body {
     padding-left: 6.5%;
