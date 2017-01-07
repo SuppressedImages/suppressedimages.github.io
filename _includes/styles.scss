@@ -93,8 +93,9 @@ h2 {
       text-shadow: inherit;
 
       i {
+        transition: all 0.2s;
         font-size: 1.5em;
-        background: rgb(210, 197, 197);
+        background: rgba(210, 197, 197, 0.75);
         color: #fffff8;
         width: 55px;
         height: 55px;
@@ -102,6 +103,10 @@ h2 {
         text-align: center;
         line-height: 55px;
         vertical-align: middle;
+      }
+
+      i:hover {
+        background: rgba(210, 197, 197, 1);
       }
     }
   }
