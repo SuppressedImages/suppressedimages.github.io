@@ -48,8 +48,16 @@ code {
 /* ============ */
 
 body {
-  padding-left: 10%;
+  width: 100% !important;
+  padding-left: 0;
+}
+
+header {
   width: 90%;
+}
+
+header, .story {
+  padding-left: 5.3rem;
 }
 
 section {
@@ -137,9 +145,12 @@ h2 {
 }
 
 @media only screen and (max-width : 1299px) {
-  body {
-    padding-left: 6.5%;
+  header {
     width: 93.5%;
+  }
+
+  header, .story {
+    padding-left: 4.6rem;
   }
 
   h1 {
@@ -148,9 +159,12 @@ h2 {
 }
 
 @media only screen and (max-width : 1099px) {
-  body {
-    padding-left: 4.5%;
+  header {
     width: 95.5%;
+  }
+
+  header, .story {
+    padding-left: 2rem;
   }
 
   h1 {
@@ -189,6 +203,15 @@ h2 {
     width: 50px;
     height: 50px;
     line-height: 50px;
+  }
+
+  .story {
+    width: 100%;
+    padding: 0;
+    img {
+      border-left: 0;
+      border-right: 0;
+    }
   }
 }
 
