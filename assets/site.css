@@ -490,6 +490,7 @@ h2 {
   }
 
   .story img {
+    margin-bottom: 2em;
     border-left: 0;
     border-right: 0;
   }
