@@ -3,6 +3,38 @@
 
 @charset "UTF-8";
 
+@font-face {
+  font-family: "et-book";
+  src: url($baseurl + "/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+  src: url($baseurl + "/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url($baseurl + "/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url($baseurl + "/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url($baseurl + "/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url($baseurl + "/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+  src: url($baseurl + "/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url($baseurl + "/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url($baseurl + "/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url($baseurl + "/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url($baseurl + "/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+  src: url($baseurl + "/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url($baseurl + "/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url($baseurl + "/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url($baseurl + "/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  font-weight: bold;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "et-book-roman-old-style";
+  src: url($baseurl + "/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
+  src: url($baseurl + "/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url($baseurl + "/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url($baseurl + "/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url($baseurl + "/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Tufte CSS styles */
 html { font-size: 15px; }
 
@@ -10,7 +42,7 @@ body { width: 87.5%;
        margin-left: auto;
        margin-right: auto;
        padding-left: 12.5%;
-       font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+       font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
        background-color: #fffff8;
        color: #111;
        max-width: 1400px;
@@ -53,7 +85,7 @@ article { position: relative;
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
-p, ol, ul, .pagination a, .pagination em { font-size: 1.4rem; }
+p, ol, ul, .pagination a, .pagination em, table { font-size: 1.4rem; }
 
 p { line-height: 2rem;
     margin-top: 1.4rem;
@@ -243,3 +275,256 @@ span.newthought { font-variant: small-caps;
                             div.table-wrapper, table, table.booktabs { width: 85%; }
                             div.table-wrapper { border-right: 1px solid #efefef; }
                             img { width: 100%; } }
+
+
+
+$baseurl: '{{ site.baseurl }}';
+$grey-color: #828282;
+
+@import 'tufte';
+// @import 'syntax-highlighting';
+
+main {
+  margin-top: 20px;
+}
+
+img {
+  background-color: gray;
+  border: 1px solid gray;
+}
+
+article {
+  padding: 2.5rem 0;
+}
+
+header {
+  margin-top: 20px;
+}
+
+.post-meta {
+  margin-top: 10px;
+}
+
+pre {
+  width: 52.5%;
+  padding-left: 2.5%;
+  overflow-x: auto;
+}
+
+@media (max-width: 760px) {
+  pre {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* ============ */
+
+body {
+  width: 100% !important;
+  padding-left: 0;
+}
+
+header {
+  width: 90%;
+}
+
+header, .story {
+  padding-left: 5.3rem;
+}
+
+section {
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+h1 {
+  margin-top: 3.1rem;
+  margin-right: 1.5em;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+.story {
+  margin-top: 1.8em;
+}
+
+.social {
+  padding: 0;
+  margin-bottom: 2.2em;
+}
+
+.social li {
+  display: inline;
+  margin-right: 0.3em;
+}
+
+.social li a {
+  text-decoration: none;
+  background: inherit;
+  text-shadow: inherit;
+}
+
+.social li a i {
+  transition: all 0.2s;
+  font-size: 1.5em;
+  background: rgba(210, 197, 197, 0.75);
+  color: #fffff8;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+  vertical-align: middle;
+}
+
+.social li a i:hover {
+  background: #d2c5c5;
+}
+
+.site-footer {
+  text-align: center;
+}
+
+.site-footer  p {
+  width: 100%;
+}
+
+.site-footer .thanks {
+  font-style: italic;
+  margin-bottom: 0.2em;
+}
+
+.logo {
+  background: inherit !important;
+}
+
+.logo img {
+  width: 160px;
+  background-color: inherit;
+  border: 0 !important;
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width : 1299px) {
+  header {
+    width: 93.5%;
+  }
+
+  header, .story {
+    padding-left: 4.6rem;
+  }
+
+  h1 {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width : 1099px) {
+  header {
+    width: 95.5%;
+  }
+
+  header, .story {
+    padding-left: 2rem;
+  }
+
+  h1 {
+    margin-top: 1.3rem;
+  }
+
+  p {
+    width: 61%;
+  }
+}
+
+@media only screen and (max-width : 899px) {
+  p {
+    width: 73%;
+  }
+}
+
+@media only screen and (max-width : 799px) {
+  p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  h1 {
+    margin-top: 0.6rem;
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+    margin-top: 1.7rem;
+  }
+
+  .social li a i {
+    font-size: 1.2em;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .story {
+    width: 100%;
+    padding: 0;
+  }
+
+  .story img {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+@media only screen and (max-width : 659px) {
+  h1 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width : 609px) {
+  p {
+    width: 89%; 
+  }
+}
+
+@media only screen and (max-width : 529px) {
+  p {
+    width: 95%; 
+  }
+}
+
+@media only screen and (max-width : 549px) {
+  h2 {
+    margin-top: 1.4rem;
+  }
+
+  section {
+    padding-top: 0.7rem;
+  }
+}
+
+@media only screen and (max-width : 366px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+}
