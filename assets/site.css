@@ -366,6 +366,10 @@ h2 {
   margin-top: 1.8em;
 }
 
+.story img {
+  margin-bottom: 1.5em;
+}
+
 .social {
   padding: 0;
   margin-bottom: 2.2em;
@@ -490,7 +494,6 @@ h2 {
   }
 
   .story img {
-    margin-bottom: 2em;
     border-left: 0;
     border-right: 0;
   }
