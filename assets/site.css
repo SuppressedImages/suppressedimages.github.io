@@ -431,6 +431,10 @@ h2 {
   margin-bottom: 2em;
 }
 
+.explanation-small {
+  display: none;
+}
+
 @media only screen and (max-width : 1299px) {
   header {
     width: 93.5%;
@@ -467,6 +471,14 @@ h2 {
 @media only screen and (max-width : 899px) {
   p {
     width: 73%;
+  }
+
+  .explanation-small {
+    display: block;
+  }
+
+  .explanation-large {
+    display: none;
   }
 }
 
