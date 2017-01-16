@@ -2,10 +2,12 @@
 layout: default
 ---
 {% assign social_text = '"Suppressed Images": a story of identity, incarceration, and the struggle for visibility' | uri_escape %}
+{% assign twitter_text = '#SuppressedImages - a story of identity, incarceration, and the struggle
+for visibility https://suppressedimages.net/ @POTUS pls #FreeChelseaNow' | uri_escape %}
 <main>
   <ul class="social">
     <li>
-      <a href="http://twitter.com/share?text={{ social_text }}&amp;url={{ site.url }}"><i class="fa fa-twitter fa-fw"></i></a>
+      <a href="http://twitter.com/share?text={{ twitter_text }}&amp;url=."><i class="fa fa-twitter fa-fw"></i></a>
     </li>
     <li>
       <a href="http://www.facebook.com/sharer/sharer.php?title={{ social_text }}&amp;u={{ site.url }}"><i class="fa fa-facebook fa-fw"></i></a>
