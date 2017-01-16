@@ -335,7 +335,7 @@ header {
   width: 90%;
 }
 
-header, .story {
+ul, .story {
   padding-left: 5.3rem;
 }
 
@@ -370,14 +370,18 @@ h2 {
   margin-bottom: 1.5em;
 }
 
+.story, .social {
+  width: 55%;
+}
+
 .social {
-  padding: 0;
+  text-align: right;
   margin-bottom: 2.2em;
 }
 
 .social li {
   display: inline;
-  margin-right: 0.3em;
+  margin-left: 0.3em;
 }
 
 .social li a {
@@ -432,7 +436,7 @@ h2 {
     width: 93.5%;
   }
 
-  header, .story {
+  ul, .story {
     padding-left: 4.6rem;
   }
 
@@ -446,8 +450,9 @@ h2 {
     width: 95.5%;
   }
 
-  header, .story {
+  .story, .social {
     padding-left: 2rem;
+    width: 61%;
   }
 
   h1 {
@@ -488,9 +493,13 @@ h2 {
     line-height: 50px;
   }
 
-  .story {
+  .story, .social {
     width: 100%;
     padding: 0;
+  }
+
+  .social {
+    text-align: center;
   }
 
   .story img {
